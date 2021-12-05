@@ -1,0 +1,44 @@
+.testimonials {
+    background: linear-gradient(rgba(72, 65, 75, 0.3), rgba(72, 65, 75, 0.3)), url('../../images/testimonials-bg.jpeg') no-repeat center fixed;
+    background-size: cover;
+    padding-bottom: 10rem;
+
+    &-row {
+        justify-content: center;
+
+        .testimonial {
+            color: white;
+
+            &-img {
+                text-align: center;
+                width: 25%;
+                margin: auto;
+                img {
+                    border-radius: 50%;
+                    border: .5rem solid rgba(255, 255, 255, 0.3);
+                }
+            }
+
+            &-content {
+                text-align: center;
+                padding: 1rem;
+                .icon {
+                    color: $color_primary;
+                    font-size: 5rem;
+                }
+
+                .text-regular {
+                    margin-bottom: 0;
+                    padding: 5rem 3rem;
+                    letter-spacing: .1rem;
+                }
+                .autor {
+                    font-family: $font_regular-condensed;
+                    color: $color_primary;
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

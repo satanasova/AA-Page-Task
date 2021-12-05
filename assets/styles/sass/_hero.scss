@@ -1,0 +1,57 @@
+.hero {
+    background: url('../../images/hero-bg.jpg') no-repeat fixed;
+    background-size: cover;
+    padding-top: 37rem;
+    padding-bottom: 13rem;
+
+    &-row {
+        justify-content: center;
+        color: white;
+        font-weight: 300;
+
+        .search {
+            position: relative;
+            opacity: .9;
+            border: 5px solid rgba(255,255,255,.3);
+            border-radius: 50rem;
+            overflow: hidden;
+
+            &-icon {
+                font-size: 1.5em;
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+                z-index: 1;
+                color: $color_primary;
+            }
+
+            &-input {
+                font-weight: inherit;
+                font-size: 1em;
+                padding: 1rem 4rem;
+                &:focus {
+                    z-index: unset;
+                }
+            }
+
+            &-btn {
+                font-size: 1em;
+                color: inherit;
+                background: linear-gradient(to bottom, $color_primary-light 15%, $color_primary);
+                text-transform: uppercase;
+                font-weight: inherit;
+                padding: 0 2rem;
+                border: none;
+            }
+        }
+
+        p {
+            opacity: .6;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 0 2rem;
+            margin-top: 3rem;
+        }
+    }
+}

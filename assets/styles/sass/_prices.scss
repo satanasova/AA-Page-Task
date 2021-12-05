@@ -1,0 +1,89 @@
+.prices {
+    padding-bottom: 10rem;
+    &-row {
+        justify-content: center;
+        border-top: .1rem solid #ccc;
+        border-bottom: .1rem solid #ccc;
+        .card {
+            border: 0;
+            border-radius: 1rem;
+            text-align: center;
+            padding: 5rem;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: $color_primary;
+                color: white;
+                transform: scale(1.03);
+                z-index: 1;
+
+                .card-title h4,
+                .card-price,
+                .card-price::after,
+                .card-price *,
+                .card-content *,
+                .card-btn {
+                    color: currentColor;
+                }
+                div:not(:last-child) {
+                    border-color: currentColor;
+                }
+            }
+
+            div:not(:last-child) {
+                border-bottom: .1rem solid #ccc;
+            }
+
+            // &-title {
+            //     color: $color_title;
+            // }
+
+            &-price {
+                font-weight: 500;
+                color: $color_title;
+                position: relative;
+                padding: 2rem 0;
+
+                &::after {
+                    content: '';
+                    width: 3rem;
+                    height: .8rem;
+                    display: block;
+                    color: $color_primary;
+                    background-color: currentColor;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                }
+
+                .price-value {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: -1rem;
+                    span {
+                        color: $color_primary;
+                        font-size: 2em;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+
+            &-content {
+                padding: 4rem 2rem 2rem 2rem;
+            }
+
+            &-btn {
+                color: $color_primary;
+                padding-top: 2rem;
+                .btn:hover {
+                    color: $color_title;
+                    border-color: white;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

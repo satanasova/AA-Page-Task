@@ -1,0 +1,44 @@
+body {
+    font-family: $font_regular;
+    font-size: 1.6rem;
+    color: $color_body;
+
+}
+
+h2,h3,h4 {
+    font-family: $font_regular-condensed;
+}
+
+h2 {
+    color: currentColor;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 300;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: $color_title;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h4 {
+    color: $color_title;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.text-regular {
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: .9;
+    &.primary {
+        color: $color_primary;
+    }
+}

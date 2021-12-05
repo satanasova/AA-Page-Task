@@ -1,0 +1,57 @@
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+    
+    &-row {
+        color: white;
+        align-items: center;
+        justify-content: center;
+
+        
+        .nav {
+            justify-content: space-evenly;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+
+            .nav-item {
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+        
+        .mobile-menu {
+            .offcanvas {
+                background-color: #202743;
+
+                &-body {
+                    padding-top: 10rem;
+                    position: relative;
+                    .nav {
+                        flex-direction: column;
+                        align-items: center;
+                        .nav-item {
+                            padding: 1rem 0;
+                        }
+                    }
+
+                    .social {
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        bottom: 25rem;
+                        left: -16.5rem;
+                        background-color: rgba(255,255,255,.3);
+                        padding: 1rem 3rem;
+                        transform: rotateZ(-90deg);
+                        &-icon {
+                            transform: rotateZ(90deg);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

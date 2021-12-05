@@ -1,0 +1,39 @@
+.contact {
+    background-color: #f7f7f7;
+    padding-bottom: 10rem;
+    &-row {
+        justify-content: center;
+        .form-control {
+            font-size: 2.5rem;
+            font-weight: 300;
+            font-family: $font_regular-condensed;
+            border: 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .15);
+            &::placeholder {
+                color: lighten($color_body, 20%);
+            }
+        }
+
+        textarea {
+            height: 35rem;
+            resize: none;
+        }
+
+        .btn-col {
+            text-align: center;
+
+            .btn-outline {
+                color: white;
+                background-color: $color_primary;
+                border-color: $color_primary;
+                &:hover {
+                    background-color: white;
+                    color: $color_primary;
+                }
+            }
+        }
+
+
+    }
+}

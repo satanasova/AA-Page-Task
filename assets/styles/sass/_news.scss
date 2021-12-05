@@ -1,0 +1,54 @@
+.news {
+    padding-bottom: 10rem;
+    &-row {
+        justify-content: center;
+        .card {
+            border: 0;
+            font-weight: 500;
+            margin-bottom: 2rem;
+
+            &-img-top {
+                border-radius: .5rem;
+                box-shadow: 0 1.5rem .5rem -1rem rgba(0, 0, 0, .4);
+            }
+
+            &-details {
+                display: flex;
+                font-size: 2rem;
+                padding-top: 2rem;
+
+                .date {
+                    color: $color_primary;
+                }
+
+                .autor {
+                    color: $color_title;
+                    position: relative;
+                    padding-left: 2rem;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 1rem;
+                        display: block;
+                        width: .1rem;
+                        height: 100%;
+                        background-color: $color_body;
+                    }
+                }
+            }
+
+            &-body {
+                padding: 0;
+
+                .card-title {
+                    font-size: 3rem;
+                }
+
+                .card-text {
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
+}
